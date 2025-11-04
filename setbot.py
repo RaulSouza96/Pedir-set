@@ -8,7 +8,8 @@ from datetime import datetime
 # ===========================
 # CONFIGURAÇÕES GERAIS
 # ===========================
-TOKEN = ""
+import os
+TOKEN = os.getenv("TOKEN")
 INTENTS = discord.Intents.default()
 INTENTS.message_content = True
 INTENTS.guilds = True
